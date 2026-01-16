@@ -1,0 +1,249 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffeeb661b86, pid=5420, tid=912
+#
+# JRE version:  (25.0.1+8) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.0.1+8-LTS-27, mixed mode, sharing, tiered, compressed class ptrs, unknown gc, windows-amd64)
+# Problematic frame:
+# C  [jimage.dll+0x1b86]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: 
+
+Host: Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz, 4 cores, 7G,  Windows 11 , 64 bit Build 22621 (10.0.22621.5415)
+Time: Fri Jan 16 12:18:06 2026 India Standard Time elapsed time: 0.031238 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x0000004f71400000,0x0000004f71500000],  sp=0x0000004f714fd730,  free space=1013k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [jimage.dll+0x1b86]  (no source info available)
+C  [jimage.dll+0x1d0f]  (no source info available)
+C  [jimage.dll+0x2619]  (no source info available)
+V  [jvm.dll+0x293702]  (no source info available)
+V  [jvm.dll+0x1158bc]  (no source info available)
+V  [jvm.dll+0x90ffe8]  (no source info available)
+V  [jvm.dll+0x4f9061]  (no source info available)
+V  [jvm.dll+0x4fa8f1]  (no source info available)
+C  [jli.dll+0x543e]  (no source info available)
+C  [ucrtbase.dll+0x29333]  (no source info available)
+C  [KERNEL32.DLL+0x1259d]  (no source info available)
+C  [ntdll.dll+0x5af78]  (no source info available)
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x000000000001d39c
+
+
+Registers:
+RAX=0x00007ffeeb664298, RBX=0x0000004f714fd821, RCX=0x00007ffeeb666000, RDX=0x00000000000074e0
+RSP=0x0000004f714fd730, RBP=0x0000004f714fd820, RSI=0x000000000000754e, RDI=0x0000004f714fd820
+R8 =0x000000000000001c, R9 =0x00007ffeeb666000, R10=0x00007ffeeba10000, R11=0x8101010101010100
+R12=0x0000000000000000, R13=0x0000000000000000, R14=0x0000004f714fe890, R15=0x00007ffe71070fa8
+RIP=0x00007ffeeb661b86, EFLAGS=0x0000000000010247
+
+XMM[0]=0x0000000000000000 0x0000000000000000
+XMM[1]=0x2f6d762f6c616e72 0x65746e692f6b646a
+XMM[2]=0x736e6f6974706f2f 0x6d762f6c616e7265
+XMM[3]=0x0000000000000000 0x0000000000000000
+XMM[4]=0x0000000000000000 0x0000000000000000
+XMM[5]=0x0000000000000000 0x0000000000000000
+XMM[6]=0x0000000000000000 0x0000000000000000
+XMM[7]=0x0000000000000000 0x0000000000000000
+XMM[8]=0x0000000000000000 0x0000000000000000
+XMM[9]=0x0000000000000000 0x0000000000000000
+XMM[10]=0x0000000000000000 0x0000000000000000
+XMM[11]=0x0000000000000000 0x0000000000000000
+XMM[12]=0x0000000000000000 0x0000000000000000
+XMM[13]=0x0000000000000000 0x0000000000000000
+XMM[14]=0x0000000000000000 0x0000000000000000
+XMM[15]=0x0000000000000000 0x0000000000000000
+  MXCSR=0x00001f80
+
+
+Top of Stack: (sp=0x0000004f714fd730)
+0x0000004f714fd730:   0000000000000000 0000000000000000   ................
+0x0000004f714fd740:   0000000000000000 0000000000000000   ................
+0x0000004f714fd750:   0000015456298300 00007ffeeb661d0f   ..)VT.....f.....
+0x0000004f714fd760:   000000000000000b 0000015456298300   ..........)VT...
+0x0000004f714fd770:   0000000000000000 0000000000000000   ................
+0x0000004f714fd780:   0000000000000000 0000000000000000   ................
+0x0000004f714fd790:   0000000000000000 0000000000000000   ................
+0x0000004f714fd7a0:   0000000000000000 0000000000000000   ................
+0x0000004f714fd7b0:   0000000000000000 0000000000000000   ................
+0x0000004f714fd7c0:   000004b0accd9653 0000000000000000   S...............
+0x0000004f714fd7d0:   00007ffe7104d980 0000000000000017   ...q............
+0x0000004f714fd7e0:   0000015456298300 0000004f714fe890   ..)VT.....OqO...
+0x0000004f714fd7f0:   000000000000000b 00007ffeeb662619   .........&f.....
+0x0000004f714fd800:   0000000000000000 0000000000000000   ................
+0x0000004f714fd810:   0000000000000000 0000000000000000   ................
+0x0000004f714fd820:   61622e6176616a2f 692f6b646a2f6573   /java.base/jdk/i
+0x0000004f714fd830:   2f6c616e7265746e 6f6974706f2f6d76   nternal/vm/optio
+0x0000004f714fd840:   000000000000736e 0000000000000000   ns..............
+0x0000004f714fd850:   0000000000000000 0000000000000000   ................
+0x0000004f714fd860:   0000000000000000 0000000000000000   ................
+0x0000004f714fd870:   0000000000000000 000000007e00027c   ........|..~....
+0x0000004f714fd880:   0000000000000000 0000000002000002   ................
+0x0000004f714fd890:   0000000000000000 0000000000000000   ................
+0x0000004f714fd8a0:   0000015456260150 000001545627e0f0   P.&VT.....'VT...
+0x0000004f714fd8b0:   0000000000000000 0000000000000000   ................
+0x0000004f714fd8c0:   000000000000000b 00007ffef857476a   ........jGW.....
+0x0000004f714fd8d0:   00000154562602e8 0000004f714fdc09   ..&VT.....OqO...
+0x0000004f714fd8e0:   0000015456260000 000000000000000b   ..&VT...........
+0x0000004f714fd8f0:   000001545627e100 000001545627e0f0   ..'VT.....'VT...
+0x0000004f714fd900:   0000000000000080 00007ffef856f9a6   ..........V.....
+0x0000004f714fd910:   0000015456260000 0000004f714fdc09   ..&VT.....OqO...
+0x0000004f714fd920:   000001545627df40 0000000000000026   @.'VT...&.......
+
+Instructions: (pc=0x00007ffeeb661b86)
+  0x00007ffeeb661a86:   80 3d 83 45 00 00 00 74 06 48 8b 53 18 eb 04 48
+  0x00007ffeeb661a96:   8b 53 40 e8 de 0e 00 00 48 c7 43 48 00 00 00 00
+  0x00007ffeeb661aa6:   8b 4b 0c 83 f9 ff 74 0c e8 11 0d 00 00 c7 43 0c
+  0x00007ffeeb661ab6:   ff ff ff ff 48 8b 4b 70 48 85 c9 74 12 ba 10 00
+  0x00007ffeeb661ac6:   00 00 e8 2f 0f 00 00 48 c7 43 70 00 00 00 00 48
+  0x00007ffeeb661ad6:   83 c4 20 5b c3 cc 40 53 48 83 ec 20 48 8b d9 48
+  0x00007ffeeb661ae6:   8d 0d 94 47 00 00 e8 db 0c 00 00 83 6b 08 01 75
+  0x00007ffeeb661af6:   24 48 8b d3 48 8d 0d 17 45 00 00 e8 42 08 00 00
+  0x00007ffeeb661b06:   48 8b cb e8 ca fe ff ff ba 78 00 00 00 48 8b cb
+  0x00007ffeeb661b16:   e8 e1 0e 00 00 48 8d 0d 5e 47 00 00 48 83 c4 20
+  0x00007ffeeb661b26:   5b e9 a8 0c 00 00 48 89 5c 24 08 48 89 74 24 10
+  0x00007ffeeb661b36:   57 48 83 ec 20 41 8b f1 4c 8b c9 48 8b fa 4d 85
+  0x00007ffeeb661b46:   c0 74 72 85 f6 74 6e 44 8a 12 48 8d 5a 01 48 8b
+  0x00007ffeeb661b56:   d3 b8 93 01 00 01 eb 12 69 c0 93 01 00 01 41 0f
+  0x00007ffeeb661b66:   b6 ca 44 8a 12 33 c1 48 ff c2 45 84 d2 75 e9 33
+  0x00007ffeeb661b76:   d2 0f ba f0 1f f7 f6 49 8b 01 49 8b c9 48 63 d2
+=>0x00007ffeeb661b86:   41 8b 14 90 ff 50 08 85 c0 7e 24 8a 0f eb 10 69
+  0x00007ffeeb661b96:   c0 93 01 00 01 0f b6 c9 33 c1 8a 0b 48 ff c3 84
+  0x00007ffeeb661ba6:   c9 75 ec 0f ba f0 1f 33 d2 f7 f6 8b c2 eb 09 79
+  0x00007ffeeb661bb6:   04 f7 d0 eb 03 83 c8 ff 48 8b 5c 24 30 48 8b 74
+  0x00007ffeeb661bc6:   24 38 48 83 c4 20 5f c3 cc cc 48 89 5c 24 08 48
+  0x00007ffeeb661bd6:   89 74 24 10 57 48 83 ec 20 48 8b f1 48 8d 0d 97
+  0x00007ffeeb661be6:   46 00 00 e8 de 0b 00 00 33 ff 39 3d 22 44 00 00
+  0x00007ffeeb661bf6:   76 24 48 8b 05 21 44 00 00 48 8b d6 48 8b 1c f8
+  0x00007ffeeb661c06:   48 8b 0b e8 9c 1f 00 00 85 c0 74 2b ff c7 3b 3d
+  0x00007ffeeb661c16:   fe 43 00 00 72 dc 33 db 48 8d 0d 5b 46 00 00 e8
+  0x00007ffeeb661c26:   aa 0b 00 00 48 8b 74 24 38 48 8b c3 48 8b 5c 24
+  0x00007ffeeb661c36:   30 48 83 c4 20 5f c3 ff 43 08 eb dc cc cc 48 89
+  0x00007ffeeb661c46:   5c 24 08 48 89 74 24 10 57 48 83 ec 20 48 8b d9
+  0x00007ffeeb661c56:   48 8b f2 48 8b 49 10 49 8b f8 8b 53 30 48 8b 01
+  0x00007ffeeb661c66:   ff 50 20 4c 8b 43 50 48 8b d6 48 8b 4b 10 44 8b
+  0x00007ffeeb661c76:   c8 e8 b0 fe ff ff 83 f8 ff 74 39 48 8b 4b 10 48
+
+
+
+---------------  P R O C E S S  ---------------
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+UseCompressedClassPointers 1, UseCompactObjectHeaders 0
+Narrow klass pointer bits -1, Max shift -1
+Narrow klass base: 0xffffffffffffffff, Narrow klass shift: -1
+Encoding Range: [0xffffffffffffffff - 0x3fffffffffffffff), (4611686018427387904 bytes)
+Klass Range:    [0x0000000000000000 - 0x0000000000000000), (0 bytes)
+Klass ID Range:  [4294967295 - 0) (1)
+No protection zone.
+
+GC Precious Log:
+<Not initialized>
+
+
+Dynamic libraries:
+0x00007ff674ac0000 - 0x00007ff674ad0000 	C:\Program Files\Java\jdk-25\bin\java.exe
+0x00007ffef8530000 - 0x00007ffef8748000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffef7a10000 - 0x00007ffef7ad4000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffef5a90000 - 0x00007ffef5e63000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffef5f30000 - 0x00007ffef6041000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffee9050000 - 0x00007ffee9067000 	C:\Program Files\Java\jdk-25\bin\jli.dll
+0x00007ffeeba10000 - 0x00007ffeeba2e000 	C:\Program Files\Java\jdk-25\bin\VCRUNTIME140.dll
+0x00007ffef77e0000 - 0x00007ffef7992000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffef6050000 - 0x00007ffef6076000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffee11e0000 - 0x00007ffee147c000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.6060_none_2712eda17382d24b\COMCTL32.dll
+0x00007ffef75c0000 - 0x00007ffef75e9000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffef7af0000 - 0x00007ffef7b97000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffef60b0000 - 0x00007ffef61cb000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffef59f0000 - 0x00007ffef5a8a000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffef7720000 - 0x00007ffef7751000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffeeba00000 - 0x00007ffeeba0c000 	C:\Program Files\Java\jdk-25\bin\vcruntime140_1.dll
+0x00007ffed15b0000 - 0x00007ffed163d000 	C:\Program Files\Java\jdk-25\bin\msvcp140.dll
+0x00007ffe705b0000 - 0x00007ffe7140f000 	C:\Program Files\Java\jdk-25\bin\server\jvm.dll
+0x00007ffef83c0000 - 0x00007ffef8471000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffef7480000 - 0x00007ffef7528000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffef6080000 - 0x00007ffef60a8000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ffef7600000 - 0x00007ffef7718000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffef7760000 - 0x00007ffef77d1000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffef5510000 - 0x00007ffef555d000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ffed3de0000 - 0x00007ffed3e14000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffee8c10000 - 0x00007ffee8c1a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffef54f0000 - 0x00007ffef5503000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ffef4620000 - 0x00007ffef4638000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffeeb660000 - 0x00007ffeeb66a000 	C:\Program Files\Java\jdk-25\bin\jimage.dll
+0x00007ffeeefd0000 - 0x00007ffeef203000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffef7ba0000 - 0x00007ffef7f31000 	C:\WINDOWS\System32\combase.dll
+0x00007ffef62e0000 - 0x00007ffef63b8000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffed0fc0000 - 0x00007ffed0ff2000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffef5640000 - 0x00007ffef56bb000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+
+JVMTI agents: none
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-25\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.6060_none_2712eda17382d24b;C:\Program Files\Java\jdk-25\bin\server
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Release file:
+<release file has not been read>
+Environment Variables:
+PATH=c:\Users\abr08\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\abr08\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Common Files\Oracle\Java\javapath;C:\1\Python313\Scripts\;C:\1\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\abr08\AppData\Local\Microsoft\WindowsApps;C:\Users\abr08\AppData\Local\Programs\Ollama;C:\Users\abr08\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\abr08\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts
+USERNAME=abr08
+LANG=en_US.UTF-8
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+TMP=C:\Users\abr08\AppData\Local\Temp
+TEMP=C:\Users\abr08\AppData\Local\Temp
+
+
+
+
+Compilation memory statistics disabled.
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 22621 (10.0.22621.5415)
+OS uptime: 0 days 0:49 hours
+
+CPU: total 4 (initial active 0) 
+Processor Information for the first 4 processors :
+  Max Mhz: 2496, Current Mhz: 2396, Mhz Limit: 2396
+
+Memory: 4k page, system-wide physical 8038M (1644M free)
+TotalPageFile size 8038M (AvailPageFile size 1M)
+current process WorkingSet (physical memory assigned to process): 9M, peak: 9M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.0.1+8-LTS-27) for windows-amd64 JRE (25.0.1+8-LTS-27), built on 2025-09-25T16:41:16Z with unknown MS VC++:1943
+
+END.
